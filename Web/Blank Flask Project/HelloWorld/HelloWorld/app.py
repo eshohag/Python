@@ -13,7 +13,17 @@ wsgi_app = app.wsgi_app
 @app.route('/')
 def hello():
     """Renders a sample page."""
-    return "Shohag Hello Worlds"
+    #return "Shohag Hello Worlds"
+    return """<html> 
+                   <head>
+                        <title>
+                            Hello World
+                        </title>
+                   </head>
+                   <body>
+                        <h1>Hello Shohag</h1>
+                   <body>        
+             </html>"""
 
 if __name__ == '__main__':
     import os
