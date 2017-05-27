@@ -29,3 +29,9 @@ def create():
                         <h1>Write Your Create Form here...</h1>
                    <body>        
              </html>"""
+
+
+#Second Steps
+@app.route("/question/<title>")
+def question(title):
+    return """<h1> Here is the title - """+title+"""</h1>""";
