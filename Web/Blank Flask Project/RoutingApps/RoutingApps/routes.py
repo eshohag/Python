@@ -1,18 +1,22 @@
 #Import flask
-from flask import Flask;
+from flask import Flask, url_for;
 from app import app;
 
 @app.route('/')
 def hello():
     """Renders a sample page."""
+    #thired Steps
+    createLink="<a href='"+url_for("create")+"'>Create a Question</a>";
     return """<html> 
                    <head>
                         <title>
                            Hello World
                         </title>
                    </head>
-                   <body>
-                        <h1>Hello World Shohag</h1>
+                   <body>  
+                     <h1>Hello World to here...</h1>
+                     
+                        """+createLink+"""
                    <body>        
              </html>"""
     
