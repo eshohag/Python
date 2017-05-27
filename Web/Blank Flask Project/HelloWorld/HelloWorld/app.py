@@ -25,6 +25,7 @@ def hello():
                    <body>        
              </html>"""
 
+
 if __name__ == '__main__':
     import os
     HOST = os.environ.get('SERVER_HOST', 'localhost')
